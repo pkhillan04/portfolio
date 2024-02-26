@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parth Khillan - Software Developer</title>
+    <title>Parth Khillan - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
+        <h1>Parth Khillan</h1>
         <nav>
-            <div class="left">Parth's Portfolio</div>
-            <div class="right">
-                <ol>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                </ol>
-            </div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <main>
-        <section id="home" class="introduction">
-            <div class="leftSection">
-                <h1>Hi, My name is <span class="colored">Parth</span></h1>
-                <p>Software Development Engineer - Front End Engineer | Cloud Engineer</p>
-            </div>
-            <div class="rightSection">
-                <img src="bg.png" alt="Parth Khillan">
-            </div>
-        </section>
-        
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <!-- Fitness App Website -->
-            <div class="project">
-                <h3>Fitness App Website</h3>
-                <p>Developed a dynamic fitness app website featuring responsive design and seamless navigation. This project showcases an intuitive interface with horizontal scrolling and interactive exercise cards to enhance user engagement.</p>
-                <p><strong>Tech Stack:</strong> React, React Router, CSS, Material-UI</p>
-                <p><a href="https://github.com/pkhillan04/fitnessApp" target="_blank">View Project</a></p>
-            </div>
-            <!-- Task Scheduling System -->
-            <div class="project">
-                <h3>Task Scheduling System</h3>
-                <p>A console-based application developed in C++ using Dijkstra's algorithm for optimizing tasks based on duration and cost, featuring user-friendly task management and customization.</p>
-                <p><strong>Tech Stack:</strong> C++, Standard Libraries</p>
-            </div>
-            <!-- Animated Car -->
-            <div class="project">
-                <h3>Animated Car</h3>
-                <p>Web animation project presenting a car moving on a track, enriched with audio effects. It demonstrates proficient use of HTML, CSS for animations, and JavaScript for interactivity.</p>
-                <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-            </div>
-            <!-- Food Ordering System -->
-            <div class="project">
-                <h3>Food Ordering System</h3>
-                <p>Console-based food ordering system designed in C++ to manage user authentication, order placements, and ratings. It showcases optimized system performance and user experience.</p>
-                <p><strong>Tech Stack:</strong> C++, File Handling</p>
-            </div>
-        </section>
 
-        <!-- Include additional sections for Experience, Skills, Education, and Certifications here -->
+    <section class="hero">
+        <img src="bg.png" alt="Hero background image">
+        <h2>Software Development Engineer | Front End Engineer | Cloud Engineer</h2>
+        <p>A passionate Software Engineer with a robust foundation in Computer Science, seeking to leverage expertise in
+            cutting-edge projects across dynamic environments.</p>
+    </section>
 
-    </main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Software Engineer with a strong foundation in Computer Science and a passion for creating innovative
+            and efficient software solutions. I am proficient in major programming languages and bring an analytical
+            approach to problem-solving, prioritizing innovative solutions and technical excellence. I am committed to
+            continuous learning and actively engage in the evolution of software practices, focusing on developing
+            efficient and scalable solutions. I am also passionate about incorporating emerging technologies and
+            methodologies to enhance software quality and performance, and I thrive in collaborative and innovative
+            teams.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Fitness App Website</h3>
+            <p>Designed and created a dynamic fitness app website using React, featuring responsive design and seamless
+                navigation. Implemented interactive exercise cards for an immersive user experience.</p>
+        </div>
+        <div class="project-card">
+            <h3>Task Scheduling System</h3>
+            <p>Developed a robust C++ console-based task scheduling system using Dijkstra's algorithm for optimal task
+                optimization. Incorporated user-friendly features and ensured a stable and error-free system.</p>
+        </div>
+        <div class="project-card">
+            <h3>Animated Car</h3>
+            <p>Crafted a captivating web animation featuring a dynamically moving car on an interactive track with audio
+                elements. Used HTML, CSS, and JavaScript for a cross-browser-compatible and mobile-responsive
+                experience.</p>
+        </div>
+        <div class="project-card">
+            <h3>Food Ordering System</h3>
+            <p>Engineered a robust C++ console-based food ordering system with comprehensive functionality, including
+                secure user authentication and a user-friendly rating system. Contributed to performance optimization
+                efforts.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: C, C++, Java, Python</li>
+            <li>Cloud & System Operations: Linux, AWS (Familiar with)</li>
+            <li>Web Development and Web Design: HTML, CSS, JavaScript, React, React Router, Material UI</li>
+            <li>Databases: MySQL</li>
+            <li>Other Skills: Data Analysis, Software Architecture and Design, Debugging, Front-End Frameworks</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with me!</p>
+        <ul>
+            <li>Email: pkhillan1@gmail.com</li>
+            <li>Phone: (351) 667-6079</li>
+            <li>LinkedIn: https://www.linkedin.com/in/parthkhilla/</li>
+            <li>GitHub: https://github.com/ParthKhillan</li>
+        </ul>
+    </section>
+
     <footer>
-        Parth Khillan © 2024
+        <p>&copy; 2024 Parth Khillan</p>
     </footer>
+
 </body>
+
 </html>
