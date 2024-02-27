@@ -40,7 +40,7 @@ nav a {
 .hero {
     text-align: center;
     padding: 4rem 0;
-    background-image: url('hero-image.jpg');
+    background-image: url('bg.png');
     /* Replace with your image URL */
     background-size: cover;
     background-position: center;
