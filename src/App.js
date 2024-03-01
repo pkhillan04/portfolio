@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <div class="static-half">
         <header>
           <h1>Parth Khillan</h1>
           <nav>
@@ -15,12 +16,13 @@ function App() {
         </header>
 
         <section class="hero">
-          <img src="bg.png" alt="Hero background image"/>
-            <h2>Software Development Engineer | Front End Engineer | Cloud Engineer</h2>
-            <p>A passionate Software Engineer with a robust foundation in Computer Science, seeking to leverage expertise in
-              cutting-edge projects across dynamic environments.</p>
+          <img src="bg.png" alt="Hero background image" />
+          <h2>Software Development Engineer | Front End Engineer | Cloud Engineer</h2>
+          <p>A passionate Software Engineer with a robust foundation in Computer Science, seeking to leverage expertise in
+            cutting-edge projects across dynamic environments.</p>
         </section>
-
+      </div>
+      <div class="scrollable-half">
         <section id="about">
           <h2>About Me</h2>
           <p>I am a Software Engineer with a strong foundation in Computer Science and a passion for creating innovative
@@ -83,6 +85,7 @@ function App() {
         <footer>
           <p>&copy; 2024 Parth Khillan</p>
         </footer>
+      </div>
     </div>
   );
 }

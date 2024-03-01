@@ -47,7 +47,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #121212;
-  color: #fff;
+  color: rgb(159, 70, 70);
   margin: 0;
   padding: 0;
 }
@@ -161,4 +161,33 @@ footer {
   nav a {
     margin: 0.5rem;
   }
+}
+
+.static-half {
+  flex: 0 0 50%;
+  /* Static left half takes up 50% of the container */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  /* Full height of the viewport */
+  width: 50%;
+  /* Take up 50% of the viewport width */
+  overflow-y: auto;
+  /* Enable vertical scrolling if needed */
+  padding: 20px;
+  background-color: #f0f0f0;
+  /* Optional background color */
+}
+
+.scrollable-half {
+  flex: 1;
+  /* Scrollable right half takes up the remaining space */
+  margin-left: 50%;
+  /* Adjust margin to leave space for the fixed left half */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  padding: 20px;
+  background-color: #ffffff;
+  /* Optional background color */
 }
