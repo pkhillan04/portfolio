@@ -21,6 +21,10 @@ import materialUIImage from './skills/material-ui.png';
 function App() {
   return (
     <div className="App">
+      {/* Parallax Stars */}
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
       <div className="static-half">
         <section className="hero">
           <h1>Parth Khillan</h1>
