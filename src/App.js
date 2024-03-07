@@ -32,10 +32,10 @@ function App() {
           <img src={profileImage} alt="Parth Khillan" className="img" />
           <div className="container-1">
             <a href="https://www.linkedin.com/in/parth-khillan-4a37861b3/">
-            <img src={linkedin} alt="LinkedIn" className="linkedIn" />
+              <img src={linkedin} alt="LinkedIn" className="linkedIn" />
             </a>
             <a href="https://github.com/pkhillan04">
-            <img src={icon} alt="GitHub" className="icon" />
+              <img src={icon} alt="GitHub" className="icon" />
             </a>
           </div>
           <h2>Software Developer | Frontend Engineer | Cloud Engineer</h2>
@@ -47,6 +47,7 @@ function App() {
         </section>
         <nav>
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
@@ -54,7 +55,7 @@ function App() {
       </div>
       <div className="scrollable-half">
         <section id="about">
-          <h2>About Me</h2>
+          <h2>Hi, I’m Parth. Nice to meet you.</h2>
           <p>
             I am a Software Engineer with a strong foundation in Computer
             Science and a passion for creating innovative and efficient software
@@ -69,7 +70,35 @@ function App() {
           </p>
         </section>
 
-
+        <section id="experience">
+        <h2>Professional Experience</h2>
+          <div className="container">
+            <div className="timeline">
+              <div className="entry">
+                <div className="entry1">
+                  <div className="title">June 2021 – December 2021</div>
+                  <div className="content">
+                    <h3>Software Development Engineer Intern</h3>
+                    <h4>BLOKMINERS - Internship</h4>
+                    <p>Developed and implemented data pipelines using Python and SQL to automate data ingestion and processing tasks. Designed and created database schemas to store and organize data efficiently.</p>
+                  </div>
+                  <div className="arrow-left"></div>
+                </div>
+              </div>
+              <div className="entry">
+                <div className="entry2">
+                  <div className="title">January 2022 – July 2022</div>
+                  <div className="content">
+                    <h3>Database Engineer</h3>
+                    <h4>FOXLEDGER - Internship</h4>
+                    <p>Developed and executed comprehensive digital databases utilizing SQL, demonstrating proficiency in database design, implementation, and optimization to enhance data management efficiency and accessibility. Created tables and forged database connections to optimize data management, fostering efficiency in collaborative projects.</p>
+                  </div>
+                  <div className="arrow-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section id="projects">
           <div className="container">
