@@ -19,6 +19,7 @@ import materialUIImage from './skills/material-ui.png';
 import linkedin from './linkedin.png';
 import gmail from './gmail.png';
 import github from './github-1.png';
+import project2 from './project-2.png';
 
 function App() {
   return (
@@ -39,10 +40,10 @@ function App() {
               <img src={github} alt="GitHub" className="icon" />
             </a>
             <a href="mailto:pkhillan1@gmail.com">
-              <img src={gmail} alt="Gmail" className="gmail"/>
+              <img src={gmail} alt="Gmail" className="gmail" />
             </a>
           </div>
-          <h2>Software Developer | Frontend Engineer | Cloud Engineer</h2>
+          <h2>Software Developer | Full Stack Engineer </h2>
           <p>
             A passionate Software Engineer with a robust foundation in Computer
             Science, seeking to leverage expertise in cutting-edge projects
@@ -55,21 +56,16 @@ function App() {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
         </nav>
+        <footer>
+          <p>Loosely designed in CSS and coded in Visual Studio Code by yours truly. Built with React.js and Material UI, deployed with Netlify.<br></br>
+            &copy; 2024 Parth Khillan</p>
+        </footer>
       </div>
       <div className="scrollable-half">
         <section id="about">
           <h2>Hi, I’m Parth. Nice to meet you.</h2>
           <p>
-            I am a Software Engineer with a strong foundation in Computer
-            Science and a passion for creating innovative and efficient software
-            solutions. I am proficient in major programming languages and bring
-            an analytical approach to problem-solving, prioritizing innovative
-            solutions and technical excellence. I am committed to continuous
-            learning and actively engage in the evolution of software practices,
-            focusing on developing efficient and scalable solutions. I am also
-            passionate about incorporating emerging technologies and
-            methodologies to enhance software quality and performance, and I
-            thrive in collaborative and innovative teams.
+            As a dedicated Software Engineer with a strong foundation in Computer Science, I excel in developing innovative and efficient software solutions. My expertise spans a broad range of programming languages, enabling me to tackle complex problems with a creative and analytical approach. I am committed to continuous learning and the adoption of cutting-edge technologies and methodologies, aiming to enhance software quality and performance. My passion for collaborative and innovative work environments drives me to contribute meaningfully to projects that seek to push the boundaries of technology.
           </p>
         </section>
 
@@ -79,11 +75,12 @@ function App() {
             <div className="timeline">
               <div className="entry">
                 <div className="entry1">
-                  <div className="title">June 2021 – December 2021</div>
+                  <div className="title">May 2021 – August 2021</div>
                   <div className="content">
-                    <h3>Software Development Engineer Intern</h3>
+                    <h3>Full Stack Developer</h3>
                     <h4>BLOKMINERS - Internship</h4>
-                    <p>Developed and implemented data pipelines using Python and SQL to automate data ingestion and processing tasks. Designed and created database schemas to store and organize data efficiently.</p>
+                    <p>GAMEPAY - Designed and developed a Full-Stack Defi marketplace platform, leveraging Web3 and ReactJS for buying, selling and creating NFTs.
+                      UNICUS - Collaborated with a team of developers to create the frontend of a blockchain-based product using Web3 and ReactJS.</p>
                   </div>
                   <div className="arrow-left"></div>
                 </div>
@@ -92,9 +89,12 @@ function App() {
                 <div className="entry2">
                   <div className="title">January 2022 – July 2022</div>
                   <div className="content">
-                    <h3>Database Engineer</h3>
-                    <h4>FOXLEDGER - Internship</h4>
-                    <p>Developed and executed comprehensive digital databases utilizing SQL, demonstrating proficiency in database design, implementation, and optimization to enhance data management efficiency and accessibility. Created tables and forged database connections to optimize data management, fostering efficiency in collaborative projects.</p>
+                    <h3>Software Engineer Intern</h3>
+                    <h4>WEBNOVATE SOLUTIONS - Internship</h4>
+                    <p>
+                      TASK TRACKER - Assisted in creating a simple, intuitive task management application using React and Material-UI, focusing on enhancing UI/UX with responsive design and CSS.
+                      BLOG PLATFORM - Supported the development of a lightweight blogging platform, leveraging JavaScript for functionality and React for dynamic content rendering, ensuring a seamless user experience.
+                    </p>
                   </div>
                   <div className="arrow-right"></div>
                 </div>
@@ -120,25 +120,17 @@ function App() {
 
             <div className="project-card" tabIndex="0">
               <div className="project-details">
-                <h3>Mighty-Moves</h3>
-                <p>Tech Stack: React for front-end development, React Router for navigation, CSS for styling, and Material-UI for components and layout. Designed and crafted a dynamic fitness app website using React, featuring responsive design and seamless dynamic routing. Introduced an intuitive horizontal scrolling menu to enhance user navigation and engagement. Implemented interactive exercise cards, creating an immersive and user-friendly experience. Carried out Analysis, Requirement understanding, feasibility, System designing, Implementation, and Testing.</p>
-                <a href="https://github.com/pkhillan04/fitnessApp">
+                <h3>Animated-Car</h3>
+                <p>Tech Stack: HTML, CSS for styling and animation, and JavaScript for audio integration and interactivity.Crafted a captivating web animation featuring a dynamically moving car on an interactive track enriched with audio elements.
+                  Implemented using a skillful combination of HTML, CSS, and JavaScript to deliver an immersive and visually compelling user experience.
+                  Applied best practices in web development to create cross-browser-compatible and mobile-responsive websites.</p>
+                <a href="https://github.com/pkhillan04/AnimatedCar">
                   <img className="icons" src={icon} alt="GitHub" />
                 </a>
               </div>
-              <img className="image project-image" src={img1} tabIndex="0" alt="Project 1 Image" />
+              <img className="image project-image" src={project2} tabIndex="0" alt="Project 2 Image" />
             </div>
 
-            <div className="project-card" tabIndex="0">
-              <div className="project-details">
-                <h3>Mighty-Moves</h3>
-                <p>Tech Stack: React for front-end development, React Router for navigation, CSS for styling, and Material-UI for components and layout. Designed and crafted a dynamic fitness app website using React, featuring responsive design and seamless dynamic routing. Introduced an intuitive horizontal scrolling menu to enhance user navigation and engagement. Implemented interactive exercise cards, creating an immersive and user-friendly experience. Carried out Analysis, Requirement understanding, feasibility, System designing, Implementation, and Testing.</p>
-                <a href="https://github.com/pkhillan04/fitnessApp">
-                  <img className="icons" src={icon} alt="GitHub" />
-                </a>
-              </div>
-              <img className="image project-image" src={img1} tabIndex="0" alt="Project 1 Image" />
-            </div>
           </div>
         </section>
 
@@ -200,9 +192,6 @@ function App() {
           </div>
 
         </section>
-        <footer>
-          <p>&copy; 2024 Parth Khillan</p>
-        </footer>
       </div>
     </div >
   );
