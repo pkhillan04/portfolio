@@ -16,6 +16,7 @@ import pythonImage from './skills/python.png';
 import reactImage from './skills/react.png';
 import rubyImage from './skills/ruby.png';
 import materialUIImage from './skills/material-ui.png';
+import linkedin from './linkedin.png';
 
 
 function App() {
@@ -29,6 +30,14 @@ function App() {
         <section className="hero">
           <h1>Parth Khillan</h1>
           <img src={profileImage} alt="Parth Khillan" className="img" />
+          <div className="container-1">
+            <a href="https://www.linkedin.com/in/parth-khillan-4a37861b3/">
+            <img src={linkedin} alt="LinkedIn" className="linkedIn" />
+            </a>
+            <a href="https://github.com/pkhillan04">
+            <img src={icon} alt="GitHub" className="icon" />
+            </a>
+          </div>
           <h2>Software Developer | Frontend Engineer | Cloud Engineer</h2>
           <p>
             A passionate Software Engineer with a robust foundation in Computer
@@ -59,6 +68,8 @@ function App() {
             thrive in collaborative and innovative teams.
           </p>
         </section>
+
+
 
         <section id="projects">
           <div className="container">
