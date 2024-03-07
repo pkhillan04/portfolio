@@ -17,7 +17,8 @@ import reactImage from './skills/react.png';
 import rubyImage from './skills/ruby.png';
 import materialUIImage from './skills/material-ui.png';
 import linkedin from './linkedin.png';
-
+import gmail from './gmail.png';
+import github from './github-1.png';
 
 function App() {
   return (
@@ -35,7 +36,10 @@ function App() {
               <img src={linkedin} alt="LinkedIn" className="linkedIn" />
             </a>
             <a href="https://github.com/pkhillan04">
-              <img src={icon} alt="GitHub" className="icon" />
+              <img src={github} alt="GitHub" className="icon" />
+            </a>
+            <a href="mailto:pkhillan1@gmail.com">
+              <img src={gmail} alt="Gmail" className="gmail"/>
             </a>
           </div>
           <h2>Software Developer | Frontend Engineer | Cloud Engineer</h2>
@@ -50,7 +54,6 @@ function App() {
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
         </nav>
       </div>
       <div className="scrollable-half">
@@ -71,7 +74,7 @@ function App() {
         </section>
 
         <section id="experience">
-        <h2>Professional Experience</h2>
+          <h2>Professional Experience</h2>
           <div className="container">
             <div className="timeline">
               <div className="entry">
@@ -195,8 +198,6 @@ function App() {
               <p>Ruby</p>
             </div>
           </div>
-
-
 
         </section>
         <footer>

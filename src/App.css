@@ -9,6 +9,7 @@ body {
   background-color: #1C3041;
   ;
   color: white;
+  font-size: 18px;
 }
 
 .App {
@@ -77,8 +78,7 @@ nav a.active {
 
 #about,
 #projects,
-#skills,
-#contact {
+#skills {
   margin-bottom: 4rem;
 }
 
@@ -92,7 +92,7 @@ nav a.active {
 }
 
 #experience .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -164,6 +164,7 @@ nav a.active {
   color: white;
   font-size: 16px;
   font-weight: bold;
+  width:12rem;
 }
 
 #experience .entry:nth-child(odd) .title {
@@ -332,6 +333,7 @@ footer {
   transform: scale(1.3);
 }
 
+
 .container-1 {
   display: flex;
   align-items: center;
@@ -340,7 +342,7 @@ footer {
 }
 
 .container-1 .icon,
-.linkedIn {
+.linkedIn, .gmail {
   width: 35px;
   height: auto;
   margin: 0 10px;
