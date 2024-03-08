@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import profileImage from './pic.png';
 import img1 from './project-material/page-1.png';
@@ -22,6 +22,9 @@ import github from './github-1.png';
 import project2 from './project-2.png';
 
 function App() {
+  useEffect = (() => {
+    document.title = "Parth Khillan"
+  })
   return (
     <div className="App">
       {/* Parallax Stars */}
