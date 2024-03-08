@@ -115,7 +115,7 @@ function App() {
                   <img className="icons" src={icon} alt="GitHub" />
                 </a>
               </div>
-              <img className="image project-image" src={img1} tabIndex="0" alt="Project 1 Image" />
+              <img className="project-image" src={img1} tabIndex="0" alt="Project 1 Image" />
             </div>
 
             <div className="project-card" tabIndex="0">
@@ -128,7 +128,7 @@ function App() {
                   <img className="icons" src={icon} alt="GitHub" />
                 </a>
               </div>
-              <img className="image project-image" src={project2} tabIndex="0" alt="Project 2 Image" />
+              <img className="project-image" src={project2} tabIndex="0" alt="Project 2 Image" />
             </div>
 
           </div>
