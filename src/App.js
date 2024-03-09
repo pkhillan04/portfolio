@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import './App.css';
 import profileImage from './pic.png';
 import img1 from './project-material/page-1.png';
@@ -25,9 +26,42 @@ import resume from './cv.png';
 
 
 function App() {
-  useEffect = (() => {
-    document.title = "Parth Khillan"
-  })
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Offset to trigger the change before reaching the section
+      const scrollOffset = 300; // Adjust this value as needed
+
+      // Get the current scroll position plus the offset
+      const currentScrollY = window.scrollY + scrollOffset;
+
+      // Get sections top position
+      const aboutTop = document.getElementById('about').offsetTop;
+      const experienceTop = document.getElementById('experience').offsetTop;
+      const projectsTop = document.getElementById('projects').offsetTop;
+      const skillsTop = document.getElementById('skills').offsetTop;
+
+      // Update activeSection state based on scroll position
+      if (currentScrollY >= skillsTop) {
+        setActiveSection('skills');
+      } else if (currentScrollY >= projectsTop) {
+        setActiveSection('projects');
+      } else if (currentScrollY >= experienceTop) {
+        setActiveSection('experience');
+      } else if (currentScrollY >= aboutTop) {
+        setActiveSection('about');
+      } else {
+        setActiveSection('');
+      }
+    };
+
+    // Add and remove the event listener
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className="App">
       {/* Parallax Stars */}
@@ -54,11 +88,31 @@ function App() {
           <h2>Software Developer | Full Stack Engineer </h2>
         </section>
         <nav>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
+          <a
+            href="#about"
+            className={activeSection === 'about' ? 'active' : ''}
+          >
+            About
+          </a>
+          <a
+            href="#experience"
+            className={activeSection === 'experience' ? 'active' : ''}
+          >
+            Experience
+          </a>
+          <a
+            href="#projects"
+            className={activeSection === 'projects' ? 'active' : ''}
+          >
+            Projects
+          </a>
+          <a href="#skills"
+            className={activeSection === 'skills' ? 'active' : ''}
+          >
+            Skills
+          </a>
         </nav>
+
         <footer>
           <p>Loosely designed in CSS and coded in Visual Studio Code by yours truly. Built with React.js and Material UI, deployed with Netlify.<br></br>
             &copy; 2024 Parth Khillan</p>
