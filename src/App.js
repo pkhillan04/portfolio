@@ -84,7 +84,7 @@ function App() {
               <img src={resume} alt="Resume" className="icon" />
             </a>
           </div>
-          <h2>Software Developer | Full Stack Engineer </h2>
+          <h2 className='head'>Software Developer | Full Stack Engineer </h2>
         </section>
         <nav>
           <a

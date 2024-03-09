@@ -26,7 +26,7 @@ body {
 .static-half {
   height: 100vh;
   position: fixed;
-  overflow-y: auto;
+  overflow-y: hidden;
   text-align: center;
 }
 
@@ -197,30 +197,48 @@ body {
 .project-card {
   display: flex;
   position: relative;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Ensure text is centered */
-  margin: 20px 0; /* Add some margin for spacing */
+  flex-direction: column;
+  /* Stack items vertically */
+  align-items: center;
+  /* Center items horizontally */
+  text-align: center;
+  /* Ensure text is centered */
+  margin: 20px 0;
+  /* Add some margin for spacing */
   background-color: #5786b0;
   transition: transform 0.3s ease-in-out;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
+  overflow: hidden;
 }
 
 .project-card:hover {
   transform: scale(1.05);
 }
 
+.project-card .project-image {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: translateX(-43%);
+}
+
 .project-details {
-  margin-bottom: 20px; /* Add space between details and image */
+  margin-bottom: 20px;
+  /* Add space between details and image */
 }
 
 .project-card img {
+  position: absolute;
   width: 400px;
   height: 200px;
   object-fit: contain;
+  bottom: 10px;
+  /* Adjust as needed */
+  right: -40px;
   transform-origin: right center;
   outline: none;
   border-radius: 8px;
@@ -228,9 +246,15 @@ body {
   margin-right: 0%;
 }
 
+.project-card .project-details {
+  padding-bottom: 12rem;
+}
+
 .project-image {
-  max-width: 100%; /* Ensure the image is responsive */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure the image is responsive */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 .image {
@@ -246,22 +270,19 @@ body {
   transform: translateX(10%) translateY(7%);
 }
 
-.project-card img {
-  transition: transform 0.5s ease; /* Adjust time as needed */
-}
-
-.project-card img:hover {
-  transform: rotate(-2deg) translateX(4%);
-  /* Rotate and move image towards left */
-}
-
 /* Additional class for GitHub icons */
 .icons {
   position: absolute;
-  bottom: 10px; /* Adjust as needed */
-  left: 10px; 
+  bottom: 10px;
+  /* Adjust as needed */
+  left: 10px;
   width: 45px !important;
   height: auto !important;
+  transition: transform 0.3s ease;
+}
+
+.icons:hover {
+  transform: rotate(-2deg) translateX(4%);
 }
 
 .github-btn {
@@ -278,7 +299,7 @@ body {
 
 footer {
   text-align: center;
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 
 @media (max-width: 768px) {
@@ -338,6 +359,9 @@ footer {
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  position: absolute;
+  bottom: 10rem;
+  left: 16rem;
 }
 
 .container-1 .icon,
@@ -364,7 +388,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 3rem;
+  margin-left: 16rem;
+  margin-top: 5rem;
 }
 
 nav a {
