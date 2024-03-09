@@ -20,6 +20,9 @@ import linkedin from './linkedin.png';
 import gmail from './gmail.png';
 import github from './github-1.png';
 import project2 from './project-2.png';
+import resume from './cv.png';
+
+
 
 function App() {
   useEffect = (() => {
@@ -33,7 +36,6 @@ function App() {
       <div id="stars3"></div>
       <div className="static-half">
         <section className="hero">
-          <h1>Parth Khillan</h1>
           <img src={profileImage} alt="Parth Khillan" className="img" />
           <div className="container-1">
             <a href="https://www.linkedin.com/in/parth-khillan-4a37861b3/">
@@ -45,13 +47,11 @@ function App() {
             <a href="mailto:pkhillan1@gmail.com">
               <img src={gmail} alt="Gmail" className="gmail" />
             </a>
+            <a href="https://github.com/pkhillan04">
+              <img src={resume} alt="Resume" className="icon" />
+            </a>
           </div>
           <h2>Software Developer | Full Stack Engineer </h2>
-          <p>
-            A passionate Software Engineer with a robust foundation in Computer
-            Science, seeking to leverage expertise in cutting-edge projects
-            across dynamic environments.
-          </p>
         </section>
         <nav>
           <a href="#about">About</a>
@@ -66,7 +66,7 @@ function App() {
       </div>
       <div className="scrollable-half">
         <section id="about">
-          <h2>Hi, I’m Parth. Nice to meet you.</h2>
+          <h2>Hi, I’m Parth Khillan.</h2>
           <p>
             As a dedicated Software Engineer with a strong foundation in Computer Science, I excel in developing innovative and efficient software solutions. My expertise spans a broad range of programming languages, enabling me to tackle complex problems with a creative and analytical approach. I am committed to continuous learning and the adoption of cutting-edge technologies and methodologies, aiming to enhance software quality and performance. My passion for collaborative and innovative work environments drives me to contribute meaningfully to projects that seek to push the boundaries of technology.
           </p>
@@ -201,3 +201,5 @@ function App() {
 }
 
 export default App;
+
+
