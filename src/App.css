@@ -365,7 +365,7 @@ nav a {
   position: relative;
   display: block;
   /* Align links inline with space */
-  transition: color 0.3s ease, padding 0.3s ease;
+  transition: color 0.3s ease-in-out, padding 0.3s ease;
 }
 
 /* Line before link text */
@@ -382,7 +382,7 @@ nav a::before {
   top: 50%;
   transform: translateY(-30%);
   /* Center vertically */
-  transition: width 0.3s ease, background-color 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Hover and active states */
@@ -396,7 +396,7 @@ nav a.active {
 
 nav a:hover::before,
 nav a.active::before {
-  width: 25%;
+  width: 45%;
   /* Extend line on hover/active */
   background-color: #FFFFFF;
   /* Bright line color on hover/active */

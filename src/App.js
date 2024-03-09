@@ -22,8 +22,7 @@ import gmail from './gmail.png';
 import github from './github-1.png';
 import project2 from './project-2.png';
 import resume from './cv.png';
-
-
+import resumePDF from './Parth Khillan_Resume.pdf';
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
@@ -81,7 +80,7 @@ function App() {
             <a href="mailto:pkhillan1@gmail.com">
               <img src={gmail} alt="Gmail" className="gmail" />
             </a>
-            <a href="https://github.com/pkhillan04">
+            <a href={resumePDF} target="_blank" rel="noopener noreferrer">
               <img src={resume} alt="Resume" className="icon" />
             </a>
           </div>
