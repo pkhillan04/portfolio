@@ -71,13 +71,13 @@ function App() {
         <section className="hero">
           <img src={profileImage} alt="Parth Khillan" className="img" />
           <div className="container-1">
-            <a href="https://www.linkedin.com/in/parth-khillan-4a37861b3/">
+            <a href="https://www.linkedin.com/in/parth-khillan-4a37861b3/" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} alt="LinkedIn" className="linkedIn" />
             </a>
-            <a href="https://github.com/pkhillan04">
+            <a href="https://github.com/pkhillan04" target="_blank" rel="noopener noreferrer">
               <img src={github} alt="GitHub" className="icon" />
             </a>
-            <a href="mailto:pkhillan1@gmail.com">
+            <a href="mailto:pkhillan1@gmail.com" target="_blank" rel="noopener noreferrer">
               <img src={gmail} alt="Gmail" className="gmail" />
             </a>
             <a href={resumePDF} target="_blank" rel="noopener noreferrer">
@@ -167,10 +167,10 @@ function App() {
               <div className="project-details">
                 <h3>Mighty-Moves</h3>
                 <p>Tech Stack: React for front-end development, React Router for navigation, CSS for styling, and Material-UI for components and layout. Designed and crafted a dynamic fitness app website using React, featuring responsive design and seamless dynamic routing. Introduced an intuitive horizontal scrolling menu to enhance user navigation and engagement. Implemented interactive exercise cards, creating an immersive and user-friendly experience. Carried out Analysis, Requirement understanding, feasibility, System designing, Implementation, and Testing.</p>
-                <a href="https://github.com/pkhillan04/fitnessApp">
-                  <img className="icons" src={icon} alt="GitHub" />
-                </a>
               </div>
+              <a href="https://github.com/pkhillan04/fitnessApp" className="github-icon-link">
+                <img className="icons" src={icon} alt="GitHub" />
+              </a>
               <img className="project-image" src={img1} tabIndex="0" alt="Project 1" />
             </div>
 

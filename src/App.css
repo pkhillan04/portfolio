@@ -195,16 +195,18 @@ body {
 }
 
 .project-card {
-  margin-top: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Ensure text is centered */
+  margin: 20px 0; /* Add some margin for spacing */
   background-color: #5786b0;
-  color: white;
+  transition: transform 0.3s ease-in-out;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s ease-in-out;
 }
 
 .project-card:hover {
@@ -212,7 +214,7 @@ body {
 }
 
 .project-details {
-  flex: 1;
+  margin-bottom: 20px; /* Add space between details and image */
 }
 
 .project-card img {
@@ -224,6 +226,11 @@ body {
   border-radius: 8px;
   margin-bottom: 0%;
   margin-right: 0%;
+}
+
+.project-image {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .image {
@@ -239,6 +246,10 @@ body {
   transform: translateX(10%) translateY(7%);
 }
 
+.project-card img {
+  transition: transform 0.5s ease; /* Adjust time as needed */
+}
+
 .project-card img:hover {
   transform: rotate(-2deg) translateX(4%);
   /* Rotate and move image towards left */
@@ -246,6 +257,9 @@ body {
 
 /* Additional class for GitHub icons */
 .icons {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 10px; 
   width: 45px !important;
   height: auto !important;
 }
