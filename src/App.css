@@ -364,6 +364,14 @@ footer {
   left: 16rem;
 }
 
+.container-1 a img{
+  transition: transform 0.2s ease-in;
+}
+
+.container-1 a:hover img{
+  transform: scale(1.3);
+}
+
 .container-1 .icon,
 .linkedIn,
 .gmail {
