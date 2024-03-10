@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import profileImage from './pic.png';
 import img1 from './project-material/page-1.png';
@@ -26,22 +25,19 @@ import resumePDF from './Parth Khillan_Resume.pdf';
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const cursorRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Offset to trigger the change before reaching the section
-      const scrollOffset = 300; // Adjust this value as needed
-
-      // Get the current scroll position plus the offset
+      const scrollOffset = 300;
       const currentScrollY = window.scrollY + scrollOffset;
 
-      // Get sections top position
       const aboutTop = document.getElementById('about').offsetTop;
       const experienceTop = document.getElementById('experience').offsetTop;
       const projectsTop = document.getElementById('projects').offsetTop;
       const skillsTop = document.getElementById('skills').offsetTop;
 
-      // Update activeSection state based on scroll position
       if (currentScrollY >= skillsTop) {
         setActiveSection('skills');
       } else if (currentScrollY >= projectsTop) {
@@ -55,12 +51,24 @@ function App() {
       }
     };
 
-    // Add and remove the event listener
+    const handleMouseMove = (event) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mousemove', handleMouseMove);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
+
+  const cursorBackgroundStyle = {
+    left: `${cursorPosition.x}px`,
+    top: `${cursorPosition.y}px`,
+    backgroundColor: activeSection === 'skills' ? '#4b70ce' : '#4b70ce', // Set the color based on activeSection
+  };
   return (
     <div className="App">
       {/* Parallax Stars */}
@@ -249,6 +257,7 @@ function App() {
 
         </section>
       </div>
+      <div id="cursor" style={cursorBackgroundStyle}></div>
     </div >
   );
 }

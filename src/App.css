@@ -6,8 +6,7 @@
 
 body {
   font-family: 'Roboto Slab', serif;
-  background-color: #1C3041;
-  ;
+  background-color: #10142c;
   color: white;
   font-size: 18px;
 }
@@ -364,11 +363,11 @@ footer {
   left: 16rem;
 }
 
-.container-1 a img{
+.container-1 a img {
   transition: transform 0.2s ease-in;
 }
 
-.container-1 a:hover img{
+.container-1 a:hover img {
   transform: scale(1.3);
 }
 
@@ -453,4 +452,43 @@ nav a.active::before {
 nav a.active {
   color: #FFFFFF;
   /* Bright text color for the active link */
+}
+
+#cursor {
+  position: fixed;
+  width: 40rem;
+  height: 40rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: soft-light;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0);
+  filter: blur(70px);
+  transition: box-shadow 0.1s ease;
+  /* Immediate transition for box-shadow */
+}
+
+/* Cursor background styles */
+.cursor-background {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #365772;
+  /* Set the background color you want */
+  border-radius: 70%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  /* Place it below the cursor */
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for background-color */
+}
+
+#cursor:hover,
+.cursor-background:hover {
+  box-shadow: 0 0 30px 30px #4b70ce inset;
+  /* Adjust the values for a more focused spotlight effect */
+  /* filter: blur(20rem); */
 }
