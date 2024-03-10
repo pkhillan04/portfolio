@@ -20,6 +20,7 @@ import linkedin from './linkedin.png';
 import gmail from './gmail.png';
 import github from './github-1.png';
 import project2 from './project-2.png';
+import project3 from './project3.png';
 import resume from './cv.png';
 import resumePDF from './Parth Khillan_Resume.pdf';
 
@@ -178,9 +179,10 @@ function App() {
             <div className="project-card" tabIndex="0">
               <div className="project-details">
                 <h3>Mighty-Moves</h3>
-                <p>Tech Stack: React for front-end development, React Router for navigation, CSS for styling, and Material-UI for components and layout. Designed and crafted a dynamic fitness app website using React, featuring responsive design and seamless dynamic routing. Introduced an intuitive horizontal scrolling menu to enhance user navigation and engagement. Implemented interactive exercise cards, creating an immersive and user-friendly experience. Carried out Analysis, Requirement understanding, feasibility, System designing, Implementation, and Testing.</p>
+                <p>
+                  Developed a fitness app website with a focus on responsive design and dynamic routing. Implemented a robust API for efficient data retrieval, an intuitive search box, and a seamless horizontal scrollbar to enhance user navigation. The project comprised features such as visually selecting body parts, displaying detailed exercise information, and creating visually appealing exercise cards. The result was a user-friendly website designed to optimize the overall fitness app experience.</p>
               </div>
-              <a href="https://github.com/pkhillan04/fitnessApp" className="github-icon-link">
+              <a href="https://github.com/pkhillan04/fitnessApp" className="github-icon-link" target="_blank" rel="noopener noreferrer">
                 <img className="icons" src={icon} alt="GitHub" />
               </a>
               <img className="project-image" src={img1} tabIndex="0" alt="Project 1" />
@@ -188,15 +190,27 @@ function App() {
 
             <div className="project-card" tabIndex="0">
               <div className="project-details">
+                <h3>Task-Scheduling</h3>
+                <p>Guided the implementation of a Dijkstra's algorithm-based system, designing user-friendly interfaces for seamless task input. Utilized priority queues to prioritize duration or cost based on user preferences. Integrated path calculation, enhancing overall project management.</p>
+              </div>
+              <a href="https://github.com/pkhillan04/TaskScheduling" className="github-icon-link" target="_blank" rel="noopener noreferrer">
+                <img className="icons" src={icon} alt="GitHub" />
+              </a>
+              <img className="project-image" src={project3} tabIndex="0" alt="Project 2" />
+            </div>
+
+
+            <div className="project-card" tabIndex="0">
+              <div className="project-details">
                 <h3>Animated-Car</h3>
-                <p>Tech Stack: HTML, CSS for styling and animation, and JavaScript for audio integration and interactivity.Crafted a captivating web animation featuring a dynamically moving car on an interactive track enriched with audio elements.
+                <p>Crafted a captivating web animation featuring a dynamically moving car on an interactive track enriched with audio elements.
                   Implemented using a skillful combination of HTML, CSS, and JavaScript to deliver an immersive and visually compelling user experience.
                   Applied best practices in web development to create cross-browser-compatible and mobile-responsive websites.</p>
-                <a href="https://github.com/pkhillan04/AnimatedCar">
+                <a href="https://github.com/pkhillan04/AnimatedCar" target="_blank" rel="noopener noreferrer">
                   <img className="icons" src={icon} alt="GitHub" />
                 </a>
               </div>
-              <img className="project-image" src={project2} tabIndex="0" alt="Project 2" />
+              <img className="project-image" src={project2} tabIndex="0" alt="Project 3" />
             </div>
 
           </div>
