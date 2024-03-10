@@ -134,38 +134,42 @@ function App() {
         </section>
 
         <section id="experience">
-          <h2>Professional Experience</h2>
           <div className="container">
-            <div className="timeline">
-              <div className="entry">
-                <div className="entry1">
-                  <div className="title">May 2021 – August 2021</div>
-                  <div className="content">
-                    <h3>Full Stack Developer</h3>
-                    <h4>BLOKMINERS - Internship</h4>
-                    <p>GAMEPAY - Designed and developed a Full-Stack Defi marketplace platform, leveraging Web3 and ReactJS for buying, selling and creating NFTs.
-                      UNICUS - Collaborated with a team of developers to create the frontend of a blockchain-based product using Web3 and ReactJS.</p>
-                  </div>
-                  <div className="arrow-left"></div>
+            <h2>Experience</h2>
+
+            <div className="exp-card" tabIndex="0">
+              <div className="exp-content">
+                <div className="exp-date">
+                  <p>Jan 2022 - July 2022</p>
+                </div>
+                <div className="exp-details">
+                  <h3>Software Engineer Intern</h3>
+                  <p>TASK TRACKER - Assisted in creating a simple, intuitive task management application using React
+                    and Material-UI, focusing on enhancing UI/UX with responsive design and CSS.</p>
+                  <p>BLOG PLATFORM - Supported the development of a lightweight blogging platform, leveraging
+                    JavaScript for functionality and React.js for dynamic content rendering, ensuring a seamless user
+                    experience.</p>
                 </div>
               </div>
-              <div className="entry">
-                <div className="entry2">
-                  <div className="title">January 2022 – July 2022</div>
-                  <div className="content">
-                    <h3>Software Engineer Intern</h3>
-                    <h4>WEBNOVATE SOLUTIONS - Internship</h4>
-                    <p>
-                      TASK TRACKER - Assisted in creating a simple, intuitive task management application using React and Material-UI, focusing on enhancing UI/UX with responsive design and CSS.
-                      BLOG PLATFORM - Supported the development of a lightweight blogging platform, leveraging JavaScript for functionality and React for dynamic content rendering, ensuring a seamless user experience.
-                    </p>
-                  </div>
-                  <div className="arrow-right"></div>
+            </div>
+
+            <div className="exp-card" tabIndex="0">
+              <div className="exp-content">
+                <div className="exp-date">
+                  <p>May 2021 - Aug 2021</p>
+                </div>
+                <div className="exp-details">
+                  <h3>Full Stack Developer Intern</h3>
+                  <p>GAMEPAY - Designed and developed a Full-Stack Defi marketplace platform, leveraging Web3 and
+                    ReactJS for buying, selling, and creating NFTs.</p>
+                  <p>UNICUS - Collaborated with a team of developers to create the frontend of a blockchain-based product
+                    using Web3 and ReactJS.</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section >
+
 
         <section id="projects">
           <div className="container">
@@ -256,7 +260,7 @@ function App() {
           </div>
 
         </section>
-      </div>
+      </div >
       <div id="cursor" style={cursorBackgroundStyle}></div>
     </div >
   );

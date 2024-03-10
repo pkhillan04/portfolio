@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #10142c;
   color: white;
   font-size: 18px;
@@ -59,133 +61,75 @@ body {
 #about p {
   color: #FFF;
   /* Set the color of the paragraph text */
-  font-size: 1.2em;
+  font-size: 1em;
   /* Adjust the font size */
   line-height: 1.5;
   /* Set the line height for better readability */
 }
 
 
-#experience {
-  width: 100%;
-  padding: 50px 0;
-  background: #1C3041;
-  /* Assuming this is the background color */
-  color: white;
-  /* Assuming the text color should be white */
-}
-
 #experience .container {
-  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-#experience h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-#experience .timeline {
-  position: relative;
+.exp-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-#experience .timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #007bff;
-  /* Color of the timeline */
-  z-index: 1;
-  /* Ensure the timeline is behind the content */
-}
-
-#experience .entry {
-  display: flex;
-  justify-content: center;
-  /* Default alignment to center */
-  margin-bottom: 30px;
-}
-
-/* Specific alignment for each child */
-#experience .entry:nth-child(odd) {
-  justify-content: flex-start;
-  /* Aligns odd entries to the left */
-}
-
-#experience .entry:nth-child(even) {
-  justify-content: flex-end;
-  /* Aligns even entries to the right */
-}
-
-#experience .entry:nth-child(odd) .entry1,
-#experience .entry:nth-child(even) .entry2 {
-  position: relative;
-  width: calc(50% - 40px);
-  /* Adjust the width of the entries */
-  background-color: #5786b0;
-  border-radius: 4px;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #10142c;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
   padding: 20px;
-  z-index: 2;
-  /* This ensures the entry is above the timeline */
-  color: white;
+  overflow: hidden;
 }
 
-#experience .entry .title {
-  position: absolute;
-  top: 20%;
-  transform: translateY(-50%);
-  /* This vertically centers the title */
-  padding: 5px 10px;
-  background-color: #5786b0;
-  /* Same as entry background */
-  border-radius: 4px;
-  color: white;
+.exp-card:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.exp-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.exp-date {
+  color: #5f7390;
+  /* or any color you want */
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.exp-date p {
   font-size: 16px;
   font-weight: bold;
-  width: 12rem;
 }
 
-#experience .entry:nth-child(odd) .title {
-  left: 125%;
-  /* Place the title to the left of the odd entries */
+.exp-details {
+  flex-grow: 1;
+  /* Allows the details to fill the space */
 }
 
-#experience .entry:nth-child(even) .title {
-  right: 125%;
-  /* Place the title to the right of the even entries */
+.exp-card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-#experience .entry::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-90%) translateX(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  z-index: 3;
-  /* Arrow should be above the timeline */
+.exp-card:hover h3 {
+  color: #56dbd4;
 }
 
-#experience .entry:nth-child(odd)::after {
-  /* Arrow for the odd entries */
-  left: 51%;
-  top: 5%;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #007bff;
+.exp-details h3 {
+  margin: 0;
+  /* Removes default margin from h3 */
 }
 
-#experience .entry:nth-child(even)::after {
-  /* Arrow for the even entries */
-  right: 49%;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #007bff transparent transparent;
+.exp-details p {
+  margin-top: 0.5em;
+  /* Adds a little space above the paragraph */
 }
 
 #projects .container {
@@ -204,7 +148,7 @@ body {
   /* Ensure text is centered */
   margin: 20px 0;
   /* Add some margin for spacing */
-  background-color: #5786b0;
+  background-color: #10142c;
   transition: transform 0.3s ease-in-out;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -215,6 +159,11 @@ body {
 
 .project-card:hover {
   transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover h3 {
+  color: #56dbd4;
 }
 
 .project-card .project-image {
