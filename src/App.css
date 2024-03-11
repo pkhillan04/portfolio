@@ -59,6 +59,7 @@ body {
 }
 
 #about p {
+  margin-top: 0%;
   color: #FFF;
   /* Set the color of the paragraph text */
   font-size: 1em;
@@ -74,6 +75,7 @@ body {
 }
 
 .exp-card {
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -245,11 +247,6 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-footer {
-  text-align: center;
-  padding: 8rem 0;
-}
-
 @media (max-width: 768px) {
 
   .static-half,
@@ -301,23 +298,13 @@ footer {
   transform: scale(1.3);
 }
 
-
-.container-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-  position: absolute;
-  bottom: 10rem;
-  left: 16rem;
-}
-
 .container-1 a img {
   transition: transform 0.2s ease-in;
 }
 
 .container-1 a:hover img {
   transform: scale(1.3);
+  filter: brightness(100%);
 }
 
 .container-1 .icon,
@@ -334,8 +321,6 @@ nav {
   text-align: left;
   /* Align text to the left */
   padding: 20px 40px;
-  /* Adjust padding to your layout */
-  margin-top: 2rem;
   top: 0;
   /* Align to the top */
   left: 0;
@@ -345,7 +330,7 @@ nav {
   justify-content: center;
   align-items: flex-start;
   margin-left: 16rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 nav a {
@@ -440,4 +425,27 @@ nav a.active {
   box-shadow: 0 0 30px 30px #4b70ce inset;
   /* Adjust the values for a more focused spotlight effect */
   /* filter: blur(20rem); */
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 20vh;
+  margin-top: 2rem;
+}
+
+.container-1 img {
+  filter: brightness(1) contrast(100%) saturate(0%) hue-rotate(0deg) sepia(0%) invert(82%) opacity(70%) grayscale(0%) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container-1 {
+  margin-bottom: 20px;
+  /* Adjust the gap between container-1 and the paragraph */
+}
+
+p {
+  margin-top: 20px;
+  /* Adjust the gap between the paragraph and container-1 */
 }

@@ -79,20 +79,6 @@ function App() {
       <div className="static-half">
         <section className="hero">
           <img src={profileImage} alt="Parth Khillan" className="img" />
-          <div className="container-1">
-            <a href="https://www.linkedin.com/in/parth-khillan-4a37861b3/" target="_blank" rel="noopener noreferrer">
-              <img src={linkedin} alt="LinkedIn" className="linkedIn" />
-            </a>
-            <a href="https://github.com/pkhillan04" target="_blank" rel="noopener noreferrer">
-              <img src={github} alt="GitHub" className="icon" />
-            </a>
-            <a href="mailto:pkhillan1@gmail.com" target="_blank" rel="noopener noreferrer">
-              <img src={gmail} alt="Gmail" className="gmail" />
-            </a>
-            <a href={resumePDF} target="_blank" rel="noopener noreferrer">
-              <img src={resume} alt="Resume" className="icon" />
-            </a>
-          </div>
           <h2 className='head'>Software Developer | Full Stack Engineer </h2>
         </section>
         <nav>
@@ -122,6 +108,20 @@ function App() {
         </nav>
 
         <footer>
+          <div className="container-1">
+            <a href="https://www.linkedin.com/in/parth-khillan-4a37861b3/" target="_blank" rel="noopener noreferrer">
+              <img src={linkedin} alt="LinkedIn" className="linkedIn" />
+            </a>
+            <a href="https://github.com/pkhillan04" target="_blank" rel="noopener noreferrer">
+              <img src={github} alt="GitHub" className="icon" />
+            </a>
+            <a href="mailto:pkhillan1@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src={gmail} alt="Gmail" className="gmail" />
+            </a>
+            <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+              <img src={resume} alt="Resume" className="icon" />
+            </a>
+          </div>
           <p>Loosely designed in CSS and coded in Visual Studio Code by yours truly. Built with React.js and Material UI, deployed with Netlify.<br></br>
             &copy; 2024 Parth Khillan</p>
         </footer>
@@ -279,6 +279,25 @@ function App() {
     </div >
   );
 }
+
+<footer>
+  <div className="container-1">
+    <a href="https://www.linkedin.com/in/parth-khillan-4a37861b3/" target="_blank" rel="noopener noreferrer">
+      <img src={linkedin} alt="LinkedIn" className="linkedIn" />
+    </a>
+    <a href="https://github.com/pkhillan04" target="_blank" rel="noopener noreferrer">
+      <img src={github} alt="GitHub" className="icon" />
+    </a>
+    <a href="mailto:pkhillan1@gmail.com" target="_blank" rel="noopener noreferrer">
+      <img src={gmail} alt="Gmail" className="gmail" />
+    </a>
+    <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+      <img src={resume} alt="Resume" className="icon" />
+    </a>
+  </div>
+  <p>Loosely designed in CSS and coded in Visual Studio Code by yours truly. Built with React.js and Material UI, deployed with Netlify.<br></br>
+    &copy; 2024 Parth Khillan</p>
+</footer>
 
 export default App;
 
