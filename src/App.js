@@ -22,7 +22,7 @@ import github from './github-1.png';
 import project2 from './project-2.png';
 import project3 from './project3.png';
 import resume from './cv.png';
-import resumePDF from './Parth Khillan_Resume.pdf';
+import resumePDF from './Resume_Parth Khillan.pdf';
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
