@@ -22,6 +22,7 @@ import github from './github-1.png';
 import project2 from './project-2.png';
 import project3 from './project3.png';
 import resume from './cv.png';
+import playButton from './play.png';
 import resumePDF from './Resume_Parth Khillan.pdf';
 
 function App() {
@@ -144,7 +145,7 @@ function App() {
                   <p>Jan 2022 - July 2022</p>
                 </div>
                 <div className="exp-details">
-                  <h3>Software Engineer Intern</h3>
+                  <h3>Software Engineer Intern - WEBOVATE SOLUTIONS</h3>
                   <p>TASK TRACKER - Assisted in creating a simple, intuitive task management application using React
                     and Material-UI, focusing on enhancing UI/UX with responsive design and CSS.</p>
                   <p>BLOG PLATFORM - Supported the development of a lightweight blogging platform, leveraging
@@ -160,7 +161,7 @@ function App() {
                   <p>May 2021 - Aug 2021</p>
                 </div>
                 <div className="exp-details">
-                  <h3>Full Stack Developer Intern</h3>
+                  <h3>Full Stack Developer Intern - BLOKMINERS</h3>
                   <p>GAMEPAY - Designed and developed a Full-Stack Defi marketplace platform, leveraging Web3 and
                     ReactJS for buying, selling, and creating NFTs.</p>
                   <p>UNICUS - Collaborated with a team of developers to create the frontend of a blockchain-based product
@@ -190,6 +191,17 @@ function App() {
 
             <div className="project-card" tabIndex="0">
               <div className="project-details">
+                <h3>Restaurant App</h3>
+                <p>Developed a comprehensive restaurant management application, emphasizing seamless integration between front-end and back-end components to ensure a robust user experience. The frontend, built with React and styled using CSS, features a dynamic, single-page application architecture facilitated by Vite for efficient build optimization. Key frontend elements include a user-friendly interface with reservation systems, and customer management pages.</p>
+                <a href="https://restaurant-app-khillan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <img className="icons" src={playButton} alt="GitHub" />
+                </a>
+              </div>
+              <img className="project-image" src={project2} tabIndex="0" alt="Project 3" />
+            </div>
+
+            <div className="project-card" tabIndex="0">
+              <div className="project-details">
                 <h3>Task-Scheduling</h3>
                 <p>Guided the implementation of a Dijkstra's algorithm-based system, designing user-friendly interfaces for seamless task input. Utilized priority queues to prioritize duration or cost based on user preferences. Integrated path calculation, enhancing overall project management.</p>
               </div>
@@ -197,20 +209,6 @@ function App() {
                 <img className="icons" src={icon} alt="GitHub" />
               </a>
               <img className="project-image" src={project3} tabIndex="0" alt="Project 2" />
-            </div>
-
-
-            <div className="project-card" tabIndex="0">
-              <div className="project-details">
-                <h3>Animated-Car</h3>
-                <p>Crafted a captivating web animation featuring a dynamically moving car on an interactive track enriched with audio elements.
-                  Implemented using a skillful combination of HTML, CSS, and JavaScript to deliver an immersive and visually compelling user experience.
-                  Applied best practices in web development to create cross-browser-compatible and mobile-responsive websites.</p>
-                <a href="https://github.com/pkhillan04/AnimatedCar" target="_blank" rel="noopener noreferrer">
-                  <img className="icons" src={icon} alt="GitHub" />
-                </a>
-              </div>
-              <img className="project-image" src={project2} tabIndex="0" alt="Project 3" />
             </div>
 
           </div>
